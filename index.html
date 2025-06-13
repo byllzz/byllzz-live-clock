@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clock -| Digital</title>
+  
+  <!--  Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='60' font-size='60'>🕒</text></svg>">
+
+  <!-- Style Sheet -->
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Digital -| Clock</h1>
+  <div class="clock-wrapper">
+    <span class="hrs">00</span><span>:</span>
+    <span class="mints">00</span><span>:</span>
+    <span class="secs">00</span>
+  </div>
+
+  <script>
+    setInterval(() => {
+    const hrs = document.querySelector('.hrs');
+    const mints = document.querySelector('.mints');
+    const secs = document.querySelector('.secs');
+
+    const now = new Date();
+    let hour = now.getHours();
+    const minute = now.getMinutes();
+    const second = now.getSeconds();
+
+    // Convert to 12-hour format
+    const ampm = hour >= 12 ? 'PM' : 'AM';
+    hour = hour % 12;
+    hour = hour ? hour : 12; // 0 becomes 12
+
+    hrs.innerHTML = hour.toString().padStart(2, '0');
+    mints.innerHTML = minute.toString().padStart(2, '0');
+    secs.innerHTML = second.toString().padStart(2, '0');
+
+    // Add AM/PM display
+    let ampmEl = document.querySelector('.ampm');
+    if (!ampmEl) {
+      ampmEl = document.createElement('span');
+      ampmEl.classList.add('ampm');
+      ampmEl.style.marginLeft = '10px';
+      ampmEl.style.fontSize = '22px';
+      ampmEl.style.opacity = '0.7';
+      document.querySelector('.clock-wrapper').appendChild(ampmEl);
+    }
+    ampmEl.textContent = ampm;
+  }, 1000);
+   </script>
+
+
+</body>
+</html>
+>
+

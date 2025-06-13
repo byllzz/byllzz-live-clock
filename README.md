@@ -9,10 +9,10 @@ A stylish and modern **Digital Clock** built using HTML, CSS, and JavaScript. Th
 - 🌑 Dark mode background with smooth dim effects
 - 🪞 Stylish `::before` and `::after` shadows for depth
 
-## Check Live
 
-![Digital Clock Live](https://project-digitalclock-09.netlify.app)
+## Live Demo
 
+👉 **[View Live](https://project-digitalclock-09.netlify.app)**  
 
 ## 🔧 Technologies Used
 

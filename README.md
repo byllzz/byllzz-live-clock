@@ -1,13 +1,13 @@
-# 🕒 Digital Clock
+#  Digital Clock
 
 A stylish and modern **Digital Clock** built using HTML, CSS, and JavaScript. This clock displays the current time in a sleek UI with a dark-themed background, and colorful gradient headings.
 
 ## 🚀 Features
 
-- 🕐 Real-time digital clock (auto-updates every second)
-- 🎨 Colorful gradient styling for the clock title
-- 🌑 Dark mode background with smooth dim effects
-- 🪞 Stylish `::before` and `::after` shadows for depth
+-  Real-time digital clock (auto-updates every second)
+-  Colorful gradient styling for the clock title
+-  Dark mode background with smooth dim effects
+-  Stylish `::before` and `::after` shadows for depth
 
 
 ## Live Demo
